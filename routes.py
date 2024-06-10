@@ -56,7 +56,7 @@ def configure_routes(app):
 
         # Execute Walmart search
         functions.append(products_data.query_walmart)
-
+ 
         results = execute_search(functions)
         search_data = process_search_results(
             results,
